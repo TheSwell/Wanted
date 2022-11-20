@@ -15,7 +15,7 @@ public class ConnectionListeners implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
-        if (Wanted.getInstance().wantedCfg.contains("wanted." + e.getPlayer() + ".level")) {
+        if (Wanted.getInstance().wantedCfg.contains("wanted." + e.getPlayer().getName() + ".level")) {
             int wantedLevel = Wanted.getInstance().wantedCfg.getInt("wanted." + e.getPlayer().getName() + ".level");
             Wanted.getApi().setWantedLevel(e.getPlayer(), wantedLevel);
         }
