@@ -55,7 +55,7 @@ public class WantedExecutor implements CommandExecutor {
                                 player.sendMessage("§6" + s);
                             }
                         }
-                    }
+                    }else player.sendMessage(getKeyFromConfig("haventPerms"));
                     if (player.hasPermission("wanted.admin")) {
                         if (args[0].equalsIgnoreCase("set")) {
                             Player targetPlayer = Bukkit.getPlayer(args[1]);
@@ -72,13 +72,14 @@ public class WantedExecutor implements CommandExecutor {
 
                             }
                         }
-                    }
-                    if (player.hasPermission("wanted.info"))
+                    }else player.sendMessage(getKeyFromConfig("haventPerms"));
+                    if (player.hasPermission("wanted.info")) {
                         if (args[0].equalsIgnoreCase("info")) {
                             Player targetPlayer = Bukkit.getPlayer(args[1]);
                             if (targetPlayer != null)
                                 player.sendMessage(getKeyFromConfig("wantedInfo", player, targetPlayer, Wanted.getApi().getWantedLevel(targetPlayer)));
                         }
+                    }else player.sendMessage(getKeyFromConfig("haventPerms"));
                 }
             } catch (Exception e) {
                 player.sendMessage(getKeyFromConfig("wrongCommand"));

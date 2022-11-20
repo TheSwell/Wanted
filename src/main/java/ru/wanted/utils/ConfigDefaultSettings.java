@@ -31,6 +31,8 @@ public class ConfigDefaultSettings {
         message.put("helpMessageInfo", "Узнать информацию розыска игрока.");
         message.put("helpMessageSet", "Установить уровень розыска.");
 
+        message.put("haventPerms", "У вас недостаточно прав.");
+
         config.addDefaults(message);
         config.options().copyDefaults(true);
         Wanted.getInstance().saveConfig();

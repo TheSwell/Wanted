@@ -1,6 +1,5 @@
 package ru.wanted.listeners;
 
-import org.bukkit.craftbukkit.bootstrap.Main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
