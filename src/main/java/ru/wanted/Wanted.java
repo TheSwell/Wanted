@@ -45,7 +45,6 @@ public class Wanted extends JavaPlugin {
     public void onEnable() {
         getServer().getLogger().info("Plugin starting...");
         api = new WantedAPI();
-        Bukkit.getPluginManager().registerEvents(new BlockBreak(), this);
         Bukkit.getPluginManager().registerEvents(new ConnectionListeners(), this);
 
         wantedActionBar = new WantedActionBar();
@@ -65,7 +64,6 @@ public class Wanted extends JavaPlugin {
                     Bukkit.getOnlinePlayers())
                 wantedActionBar.infinityWantedActionBar(onlinePlayer);
         }, 20, 20));
-
     }
 
 
