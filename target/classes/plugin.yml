@@ -1,8 +1,0 @@
-name: Wanted
-version: 1.0
-main: ru.wanted.Wanted
-api-version: 1.13
-description: created by TheSwell
-commands:
-  Wanted:
-    description: /wanted help
