@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="Wanted">
-    <output-path>$USER_HOME$/Desktop/Minecraft Server/plugins</output-path>
-    <root id="archive" name="Wanted.jar">
-      <element id="module-output" name="Wanted" />
-    </root>
-  </artifact>
-</component>
